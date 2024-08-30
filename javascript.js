@@ -22,6 +22,8 @@ const habilidades = [
     { descricao: "HTML5", arquivo: "html.logo.png" },
     { descricao: "CSS3", arquivo: "css.logo.png" },
     { descricao: "JavaScript", arquivo: "js.logo.png" },
+    { descricao: "Github", arquivo: "github.logo.png" },
+    { descricao: "Git", arquivo: "git.logo.png" },
     { descricao: "Em aprendizado", arquivo: "coming_soon.png" },
     { descricao: "Em aprendizado", arquivo: "coming_soon.png" },
     { descricao: "Em aprendizado", arquivo: "coming_soon.png" },
