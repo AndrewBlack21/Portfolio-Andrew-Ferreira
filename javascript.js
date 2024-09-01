@@ -18,6 +18,7 @@ document.getElementById('verMais').addEventListener('click', function() {
   }
 });
 
+// Adicionar imagens nas habilidades 
 const habilidades = [
     { descricao: "HTML5", arquivo: "html.logo.png" },
     { descricao: "CSS3", arquivo: "css.logo.png" },
@@ -43,6 +44,8 @@ habilidades.forEach(habilidade => {
     habilidadeDiv.appendChild(img);
     habilidadesSection.appendChild(habilidadeDiv);
 });
+
+// Adicionar um botao para dispositivos mobile 
 
 document.querySelector('.toggle-menu').addEventListener('click',function(){
     document.querySelector('header nav ul').classList.toggle('active');
