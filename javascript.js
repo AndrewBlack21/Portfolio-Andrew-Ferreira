@@ -43,3 +43,8 @@ habilidades.forEach(habilidade => {
     habilidadeDiv.appendChild(img);
     habilidadesSection.appendChild(habilidadeDiv);
 });
+
+document.querySelector('.toggle-menu').addEventListener('click',function(){
+    document.querySelector('header nav ul').classList.toggle('active');
+})
+

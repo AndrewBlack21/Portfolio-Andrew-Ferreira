@@ -1,15 +1,34 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:  #1F232F;
+    background-color: #1F232F;
     color: #fff;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+.intro, .sobre-mim {
+    max-width: 100%; 
+    flex-wrap: wrap; 
+}
+section {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
 }
 
 header{
@@ -18,12 +37,36 @@ header{
     z-index: 1000;
     padding: 10px ;
     background-color:  #564A94;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #fff;
     opacity: 15;
     position: fixed;
     top: 0;
+    align-items: center;
+    flex-direction: column;
     
+}
+section, div {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    margin: 0 15px;
+}
+
+.header nav ul {
+    justify-content: center; 
+}
+
+section{
+    padding: 100px 20px;
+    margin-top: 60px;
 }
 
 .espaco p{
@@ -36,25 +79,6 @@ section{
     padding: 100px 20px;
     margin-top: 60px;
 }
-
-/* Resposivo */
-
-@media(max-width: 768px){
-    header nav ul{
-        flex-direction: column;
-        background-color:  #1F232F;
-    }
-    
-    header nav ul li{
-        margin-bottom: 10px;
-    }
-}
-
-.logo{
-    display: flex;
-    gap: 10px;
-}
-
 .logo-item{
     background-color: #45B0D2;
     color: #fff;
@@ -96,6 +120,8 @@ nav ul li a{
 .text p {
     font-size: 24px;
     margin-top: 10px;
+    padding: 0 10px; 
+    text-align: justify; 
 }
 
 .btn{
@@ -131,6 +157,7 @@ nav ul li a{
 .container{
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .perfil-imagem{
@@ -177,6 +204,8 @@ nav ul li a{
 .bio p{
     font-size: 18px;
     line-height: 1.6;
+    padding: 0 10px;
+    text-align: justify;
 }
 
 /* Projeto do Portfolio */
@@ -265,7 +294,9 @@ h1{
 
 .hidden {
     display: none;
-  }
+}
+
+/* botao do ver mais */
 
 button {
     
@@ -330,5 +361,62 @@ button {
     display: flex;
     justify-content: space-around;
     background-color: #564A94;
+}
+
+/* Menu responsivo mobile */
+.mobile-menu{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(31, 35, 47, 0.9);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.mobile-menu nav ul{
+    display: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-menu input[type="checkbox"]{
+    display: none;
+}
+
+.mobile-menu label.menu-icon{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mobile-menu input[type="checkbox"]:checked ~ nav ul{
+    display: flex;
+}
+
+.mobile-menu nav ul li{
+    margin: 0 10px;
+}
+
+.mobile-menu nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu nav ul li a i{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.fa{
+    font-family: FontAwesome;
 }
 
