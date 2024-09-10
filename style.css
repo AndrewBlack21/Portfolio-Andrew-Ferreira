@@ -35,7 +35,7 @@ header{
     display: flex;
     width: 100%;
     z-index: 1000;
-    padding: 10px ;
+    padding: 4px ;
     background-color:  #564A94;
     justify-content: space-between;
     color: #fff;
@@ -44,6 +44,7 @@ header{
     top: 0;
     align-items: center;
     flex-direction: column;
+
     
 }
 section, div {
@@ -211,112 +212,56 @@ nav ul li a{
 
 /* Projeto do Portfolio */
 
-.projeto{
-    background-color: #F2ECF8;
-    padding: 50px 100px;
-    color: #fff;
-    text-align: center;
-}
-
-.projeto h2{
-    font-size: 36px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 40px;
-}
-
-.projeto-lista{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: 30px;
-}
-
-h1{
+.carousel-inner{
+    width: 500px;
+    height: 560px;
     display: flex;
     justify-content: center;
-    padding: 8px;
-    margin: -11px;
-    font-size: 3rem;
+    align-items: stretch;
+    flex-direction: row;
 }
 
-.projetos {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.carousel-control-prev {
+    left: -350px;
+}
 
-  .projeto {
-    width: 290px;
-    height: 235px;
-    background-color: #ccc;
-    margin: 10px;
+.carousel-control-next {
+    right: -350px;
+}
+
+.conteudo-carroseul{
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-
-.projeto-imagem{
-    background-color: #F2ECF8;
-    padding: 50px;
-    position: relative;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imagem-projeto img{
-    width: 290px;
-    height: 235px;
-}
-
-.imagem-projeto h4{
-    display: flex;
-    justify-content: center;
-}
-
-.em-breve{
-    font-size: 24px;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-#verMais{
-    width: 28%;
-    background-color: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    display: flex;
+    align-items: stretch;
     flex-direction: column;
-    margin: 30px;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    transition: background-color 0.3s;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
-.ver-mais:hover{
-    background-color: #ddd;
-}
-
-.hidden {
-    display: none;
-}
-
-/* botao do ver mais */
-
-button {
-    
-    width: 10% !important;
-  }
-.button-mais{
+.conteudo-carroseul h2{
+    font-size: 300%;
     display: flex;
+    align-items: stretch;
     justify-content: center;
-    width: 100%;
+    padding: 15px;
+    background-color: #564A94;
+    border-radius: 10px;
 }
+
+.descricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.descricao h4{
+    display: flex;
+    justify-content: left;
+}
+
+
 
 /* Habilidades do Portfolio */
 
@@ -371,6 +316,7 @@ button {
     display: flex;
     justify-content: space-around;
     background-color: #564A94;
+    font-size: 1em;
 }
 
 /* Menu responsivo mobile */
