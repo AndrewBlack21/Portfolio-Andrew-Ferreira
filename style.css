@@ -31,6 +31,12 @@ img {
     margin: 0 auto; 
 }
 
+.texto img{
+    width: 50px;
+    height: 45px;
+    border-radius: 20px;
+}
+
 header{
     display: flex;
     width: 100%;
@@ -44,9 +50,28 @@ header{
     top: 0;
     align-items: center;
     flex-direction: column;
-
+    
     
 }
+
+a:hover{
+    text-decoration: none;
+}
+
+
+
+nav a{
+    position:relative;
+    top:0;
+
+}
+
+nav a:hover{
+    top:-4px;
+    box-shadow:0 6px 6px #564A94;
+    transition: all .2s ease-in-out
+}
+
 section, div {
     max-width: 100%;
     box-sizing: border-box;
@@ -73,6 +98,7 @@ section{
 .espaco p{
    display: flex;
    align-content: center;
+   flex-direction: column;
    
 }
 
@@ -102,6 +128,11 @@ nav ul li a{
     color: #fff;
 }
 
+nav ul li a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
 .intro{
     display: flex;
     align-items: center;
@@ -126,19 +157,15 @@ nav ul li a{
 }
 
 .btn{
-    display: inline-block;
-    padding: 20px 10px;
-    margin-top: 20px;
-    background-color:  #F2ECF8;
-    color: #9B8AB4;
-    border: none;
-    border-radius: 75px;
-    text-decoration: none;
-    font-size: 18px;
+    position: relative;
+    top: 0;
+    
 }
 
-.btn a:hover{
-    color: #45B0D2;
+.btn:hover{
+    top: -4px;
+    box-shadow: 0 4px 4px #564A94;
+    transition: all .2s ease-in-out;
 }
 
 .profile-picture img{
