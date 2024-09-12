@@ -164,8 +164,14 @@ nav ul li a:hover{
 
 .btn:hover{
     top: -4px;
-    box-shadow: 0 4px 4px #564A94;
-    transition: all .2s ease-in-out;
+    /* box-shadow: 0 4px 4px #564A94;
+    transition: all .2s ease-in-out; */
+}
+
+/* icone btn */
+
+.img-box:hover img:hover{
+    filter: drop-shadow(0 15px 15px #564A94);
 }
 
 .profile-picture img{
