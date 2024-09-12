@@ -13,6 +13,8 @@ html{
     
 }
 
+
+
 /* scroll custom */
 body::-webkit-scrollbar {
     width: 10px;               
@@ -187,13 +189,27 @@ nav ul li a:hover{
     top: -4px;
     /* box-shadow: 0 4px 4px #564A94;
     transition: all .2s ease-in-out; */
-}
-
-/* icone style */
-
-.img-box:hover img:hover{
     filter: drop-shadow(0 15px 15px #564A94);
 }
+
+/* Display carrosel */
+
+.display{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 200em;
+}
+
+.projeto img{
+    width: 150vh;
+    height: 50vh;
+    margin-right: 70px;
+    padding: 20px;
+    
+}
+
+/* fim de display */
 
 .habilidade img:hover{
     filter: drop-shadow(0 15px 15px #564A94);
@@ -272,7 +288,7 @@ nav ul li a:hover{
 /* Projeto do Portfolio */
 
 .carousel-inner{
-    width: 500px;
+    width: 700px;
     height: 560px;
     display: flex;
     justify-content: center;
