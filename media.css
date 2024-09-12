@@ -198,6 +198,10 @@
         margin-bottom: 15px;
     }
 
+    .container .perfil-imagem{ 
+        display: none;
+    }
+
     .projeto h2 {
         font-size: 24px;
     }

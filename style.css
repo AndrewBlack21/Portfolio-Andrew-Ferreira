@@ -9,8 +9,26 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
 }
 
+/* scroll custom */
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+
+body::-webkit-scrollbar-track {
+    background: #564A94;        
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #564A94;    
+    border-radius: 10px;       
+    border: 2px solid #1F232F;  
+  }
+
+  /* Fim */
 body{
     font-family: "Poppins", sans-serif;
     background-color: #1F232F;
