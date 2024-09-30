@@ -5,7 +5,7 @@ const habilidades = [
     { descricao: "JavaScript", arquivo: "js.logo.png" },
     { descricao: "Github", arquivo: "github.logo.png" },
     { descricao: "Git", arquivo: "git.logo.png" },
-    { descricao: "Em aprendizado", arquivo: "coming_soon.png" },
+    { descricao: "Bootstrap", arquivo: "boostrap.png" },
     { descricao: "Em aprendizado", arquivo: "coming_soon.png" },
     { descricao: "Em aprendizado", arquivo: "coming_soon.png" },
 ];
