@@ -9,20 +9,47 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: Roboto, Poppins, sans-serif;
     
 }
 
+.heading{
+    text-align: center;
+    margin: 2rem;
+    position: relative;
+    padding-top: 0.2rem;
+}
 
+.heading::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: .1rem;
+    width: 100%;
+    background-color: #564A94;
+    z-index: -1;
+}
+
+.heading span{
+    font-size: 1.9rem;
+    color: #564A94;
+    background: #1F232F;
+    padding: 0.5rem 1.5rem;
+    border: 0.1rem solid #1F232F;
+    border-radius: .5rem;
+    font-weight: 700;
+}
 
 /* scroll custom */
 body::-webkit-scrollbar {
     width: 10px;               
-  }
+}
 
 body::-webkit-scrollbar-track {
     background: #564A94;        
-  }
+}
 
 body::-webkit-scrollbar-thumb {
     background-color: #564A94;    
@@ -92,7 +119,7 @@ nav a{
 nav a:hover{
     top:-4px;
     box-shadow:0 6px 6px #564A94;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 section, div {
@@ -114,19 +141,19 @@ header nav ul li{
 }
 
 section{
-    padding: 100px 20px;
+    padding: 0px 20px;
     margin-top: 60px;
 }
 
 .espaco p{
-   display: flex;
-   align-content: center;
-   flex-direction: column;
-   
+display: flex;
+align-content: center;
+flex-direction: column;
+
 }
 
 section{
-    padding: 100px 20px;
+    padding: 0px 20px;
     margin-top: 60px;
 }
 .logo-item{
@@ -160,7 +187,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 225px 100px;
+    padding: 6rem;
     background: linear-gradient(135deg, #1F232F 50%, #564A94 50%);
 }
 
@@ -190,6 +217,7 @@ nav ul li a:hover{
     /* box-shadow: 0 4px 4px #564A94;
     transition: all .2s ease-in-out; */
     filter: drop-shadow(0 15px 15px #564A94);
+    transform: scale(1.2);
 }
 
 /* Display carrosel */
@@ -202,17 +230,23 @@ nav ul li a:hover{
 }
 
 .projeto img{
-    width: 150vh;
-    height: 50vh;
+    width: 100rem;
+    height: 25rem;
     margin-right: 70px;
     padding: 20px;
     
+}
+
+.projeto img:hover{
+    transform: scale(1.1);
 }
 
 /* fim de display */
 
 .habilidade img:hover{
     filter: drop-shadow(0 15px 15px #564A94);
+    outline: none;
+    transform: scale(1.3);
 }
 
 .profile-picture img{
@@ -225,7 +259,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 150px 100px;
+    padding: 6rem;
     background: linear-gradient(135deg, #564A94 50%, #1F232F 50%);
 }
 
@@ -314,7 +348,7 @@ nav ul li a:hover{
     align-content: center;
 }
 
-.conteudo-carroseul h2{
+/* .conteudo-carroseul h2{
     font-size: 300%;
     display: flex;
     align-items: stretch;
@@ -322,13 +356,14 @@ nav ul li a:hover{
     padding: 15px;
     background-color: #564A94;
     border-radius: 10px;
-}
+} */
 
 .descricao{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .descricao h4{
@@ -343,14 +378,14 @@ nav ul li a:hover{
 #habilidades{
     text-align: center;
     background-color: #1F232F;
-    padding: 50px 0;
+    /* padding: 0 0; */
 }
 
-#habilidades h2{
+/* #habilidades h2{
     font-size: 2.5rem;
     color: #fff;
     font-family: 'Press Start 2P', cursive;
-}
+} */
 
 #habilidades p{
     color: #ccc;
@@ -451,3 +486,166 @@ nav ul li a:hover{
     font-family: FontAwesome;
 }
 
+/* forms */
+
+form{
+    width: 100%;
+    max-width: 30rem;
+    padding: 20px;
+}
+
+label, input, textarea{
+    display: block;
+}
+
+input, textarea, button{
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.conosco .container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.conosco .container fomr{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.conosco .container label, input,textarea,button{
+    display: block;
+}
+
+.conosco .container input,textarea,button{
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+
+.conosco .container input, textarea{
+    margin-bottom: 1rem;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+}
+
+.conosco .container input:hover, input:focus, textarea:hover, textarea:focus{
+    outline:none;
+    border-color: #564A94;
+    box-shadow: 0 0 0 0.3125rem #564A94;
+}
+
+.conosco .container label{
+    margin-bottom: 0.5rem;
+    color: #45B0D2;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.conosco .container textarea{
+    min-height: 12.5rem;
+    resize: vertical;
+    color: #1F232F;
+    font-size: 1.5rem;
+}
+
+.conosco .container button{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 99px;
+    color: #ccc;
+    background: #45B0D2;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1rem;
+}
+
+.conosco .container button:hover, button:focus{
+    outline: none;
+    background: #564A94;
+    transform: scale(1.1);
+}
+
+.conosco .container button:disabled{
+    cursor: not-allowed;
+    background: var(--cor-four-cinza);
+}
+
+
+.conosco .container .text{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 90%;
+    height: 100%;
+    gap: 3rem;
+}
+
+.conosco .container .text h3{
+    font-size: 2rem;
+    color: var(--cor-primary-dourado);
+}
+
+.conosco .container .text p{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.conosco .container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+    border: 0.1rem solid var(--cor-primary-dourado);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.2rem;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #564A94;
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box p i{
+    padding-right: 5rem;
+    color: #45B0D2;
+}
+
+.footer .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: #564A94;
+    background: #45B0D2;
+    border-radius: 50%;
+    margin-right: 5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    transform: scale(1.2);
+}

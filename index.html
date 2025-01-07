@@ -26,6 +26,7 @@
                 <li><a href="#sobre-mim"><i class="fa fa-user"></i>Sobre mim</a></li>
                 <li><a href="#projetos"><i class="fa fa-folder-open"></i>Projetos</a></li>
                 <li><a href="#habilidades"><i class="fa fa-code"></i>Habilidades</a></li>
+                <li><a href="#conosco"><i class="fa fa-comment"></i>Mensagem</a></li>
             </ul>
         </nav>
     </header>
@@ -47,13 +48,13 @@
         <section class="intro">
             <div class="texto">
                 <div class="espaco">
-                <h1>Olá, sou o <b>Andrew Ferreira</b></h1>
-                <p>Desenvolvedor Front-end</p>
+                <h1>Olá, sou <b>Andrew Ferreira</b></h1>
+                <p>Desenvolvedor</p>
                 </div>
                 
                 <div class="img-box">
                 <a href=" https://www.linkedin.com/in/andrew-ferreira-680101197 " target="_blank" class="btn" alt=""><img src="imagens/linkedin.png" alt=""></a>
-                <a href=" https://acesse.one/PunWf" target="_blank" class="btn" alt=""><img src="imagens/whatsapp.png" alt=""></a>
+                <a href="https://wa.me/5513981142641" target="_blank" class="btn" alt=""><img src="imagens/whatsapp.png" alt=""></a>
                 <a href=" https://github.com/AndrewBlack21" target="_blank" class="btn" alt=""><img src="imagens/github.png" alt=""></a>
                 </div>
 
@@ -69,12 +70,14 @@
                     <img src="imagens/perfil.png" alt="imagem" class="imagem-movimento">
                 </div>
                 <div class="bio">
-                    <h2><b>Sobre mim</b></h2>
+                    <h2 class="heading"><span>Sobre mim</span></h2>
                     <p>
-                        Meu nome é <b>Andrew Ferreira</b> e sou um apaixonado por tecnologia. no meu primeiro contato com a programação eu me apaixonei por tanta coisa que é possivel fazer, desde entao entrei na faculdade de ADS (Analise e desenvolvimento de sistemas) e estudo por fora Também para aprender mais e evoluir minhas habilidades. Apesar de ter gostado da área, estou em busca de uma oportunidade profissional para estar adquirindo experiencia e ajudando profissionalmente a empresa.                    
+                        Meu nome é <b>Andrew Ferreira</b> e sou um apaixonado por tecnologia desde o meu primeiro contato com a programação eu me apaixonei por tanta coisa que é possivel fazer, 
+                        desde entao entrei na faculdade de <b>ADS (Analise e desenvolvimento de sistemas)</b> e estudo por fora também para aprender mais e evoluir minhas habilidades. 
+                        Estou em busca de uma oportunidade profissional para estar adquirindo experiencia e ajudando profissionalmente a empresa.                    
                     </p>
                     <p>
-                        Hoje já entendo tecnologias voltadas para o Front-end. 
+                        Hoje já entendo tecnologias voltadas para o Front-end.
                     </p>
                 </div>
             </div>
@@ -84,12 +87,13 @@
                 
             
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                
                 <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <h2>Projetos</h2>
+                <h2 class="heading"><span>Projetos</span></h2>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="display">
@@ -131,6 +135,32 @@
                 </div>
 
                 <div class="carousel-item">
+                    <div class="display">
+                    <div class="descricao">
+                        <h3>Projeto PIB VP</h3>
+                        <span>Projeto desenvolvido com as tecnologia <b>HTML, CSS</b>, <b>JS</b> para uma instituição de Jiu-Jitsu sem fins lucrativos </span>
+                    </div>
+                    <div class="projeto">
+                    <a href="https://andrewblack21.github.io/PIB-VP/" target="_blank"><img src="imagens/Imagem de projetos/PIB-VP.png" alt=""></a>
+                    
+                    </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="display">
+                    <div class="descricao">
+                        <h3>Projeto Home Office</h3>
+                        <span>Projeto desenvolvido com as tecnologia <b>HTML, CSS</b>, <b>JS</b> Desenvolvido sem fins lucrativo, uma pagina para quem sonha em trabalhar home office, e tendo sua vida muda profissionalmente </span>
+                    </div>
+                    <div class="projeto">
+                    <a href="https://andrewblack21.github.io/projeto-home-office/" target="_blank"><img src="imagens/Imagem de projetos/home-office.png" alt=""></a>
+                    
+                    </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
                     <div class="descricao">
                         <h3>Em desenvolvimento</h3>
                         <span></span>
@@ -158,17 +188,33 @@
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="heading"><span>Habilidades</span></h2>
+        </section>
+
+        <section id="conosco" class="conosco">
+            <h3 class="heading"><span>Envie uma mensagem</span></h3>
+            <div class="container">
+                <div class="content">
+                    <form action="https://formsubmit.co/andrew.moraes16@hotmail.com" method="POST" data-form="" data-form novalidate>
+                        <input type="hidden" name="_captcha" value="false">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="name" id="nome" required="Por favor coloque o nome">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required="Por favor coloque um email">
+                        <label for="messagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" required></textarea>
+                        <button type="submit" data-button>Enviar</button>
+                        </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="rodape">
-            <p><b>Email.: andrew.moraes16@hotmail.com</b></p>
-            <p>Feito por.: <b>Andrew Ferreira</b></p>
-        </div>
-    </footer>
 
+    <footer class="footer">
+        &copy; 2024 copyright Desenvolvido Andrew ferreira  &copy; <a href="" style="color: #aaa; text-decoration: none;"> Andrew Ferreira</a>
+        
+    </footer>
 
     <script src="javascript.js"></script>
     <!-- Javascript Bootstrap -->
